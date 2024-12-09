@@ -8,7 +8,6 @@ let table = [];
 let holding = false;
 
 let gameTurn = "white";
-let isAIMode = true;
 
 const move = new Audio('audios/move-self.webm');
 const capture = new Audio('audios/capture.webm');
@@ -92,12 +91,7 @@ function restartGame() {
     prediction = document.createElement("div");
     prediction.setAttribute("class", "prediction");
 
-    // Initialize AI mode
-    gameTurn = "white";
-    isAIMode = true;
-    
-    // Only add click handlers to white pieces
-    document.querySelectorAll(".piece.white").forEach(element => {
+    document.querySelectorAll(".piece").forEach(element => {
         element.addEventListener("mousedown", (e) => {
             movement(e, element);
         })
