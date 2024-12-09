@@ -1,0 +1,93 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #73aad0, #072f46);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    height: 800px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #1c1e30;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header h1 {
+    font-size: 2em;
+    color: #ffae00;
+    text-shadow: 0px 0px 8px #ffae00, 2px 2px 0px #000;
+    font-family: 'Pirata One', cursive;
+  }
+  
+  .pirate-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .board-image img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn {
+    width: 70px; /* Button width */
+    height: 70px; /* Button height (equal to width for round shape) */
+    background: #945725;
+    border: none;
+    color: white;
+    font-size: 0.999em;
+    font-weight: bold;
+    border-radius: 50%; /* Makes the button round */
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .btn:hover {
+    background: #ffaa00;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  .btn.level {
+    background: #945725;
+  }
+  
+  .btn.menu {
+    background: #945725;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 95%;
+      height: auto;
+    }
+
+    button {
+      width: 90%;
+      font-size: 0.9em;
+    }
+ 
+  }
+
+  
